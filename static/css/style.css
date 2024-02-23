@@ -1,23 +1,20 @@
-/* Google fonst css */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-
 body {
     font-family: Montserrat, sans-serif;
     background-color: #F9FAFC;
 }
 
+.navbar {
+    background-color: #d3d7d7;
+}
+
 .brand {
     font-size: 1.4rem;
     font-weight: 700;
-    color: #4A4A4F;
+    color: #445261;
 }
 
-.green-i {
-    color: #14e810;
-}
-
-.thin {
-    font-weight: 300;
+.orange-ea {
+    color: #e87510;
 }
 
 .light-bg {
@@ -25,7 +22,7 @@ body {
 }
 
 .dark-bg {
-    background-color: #445261;
+    background-color: #d3d7d7;
 }
 
 .main-bg {
@@ -161,4 +158,8 @@ body {
 
 .approval {
     color: rgb(222, 146, 168);
+}
+
+.footer-text {
+    color: #445261;
 }
