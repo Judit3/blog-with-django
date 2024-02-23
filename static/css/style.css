@@ -77,26 +77,15 @@ body {
     overflow: hidden;
 }
 
-.masthead-image:after {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 90%;
-    height: 100%;
-    width: 150%;
-    background: #445261;
-    -webkit-transform: skew(15deg);
-    -moz-transform: skew(15deg);
-    transform: skew(15deg);
-    z-index: 100;
-}
-
 .post-link {
     text-decoration: none;
     color: #445261;
 }
 
-.post-link:hover,
+.post-link:hover{
+    color:  #e87510;
+}
+
 .page-link {
     background-color: #e87510;
     color: #fff;
