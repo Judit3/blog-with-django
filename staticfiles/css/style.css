@@ -1,20 +1,22 @@
 body {
+    font-family: Montserrat, sans-serif;
     background-color: #F9FAFC;
+    
+}
+
+.navbar {
+    /* background-color: #d3d7d7; */
+    background-color: yellow;
 }
 
 .brand {
-    font-family: Lato, sans-serif;
     font-size: 1.4rem;
     font-weight: 700;
-    color: #4A4A4F;
+    color: #445261;
 }
 
-.green-i {
-    color: #14e810;
-}
-
-.thin {
-    font-weight: 300;
+.orange-ea {
+    color: #e87510;
 }
 
 .light-bg {
@@ -22,16 +24,33 @@ body {
 }
 
 .dark-bg {
-    background-color: #445261;
+    background-color: #d3d7d7;
 }
 
 .main-bg {
     background-color: #F9FAFC;
 }
 
+.logged, 
+.alert {
+    margin-bottom: 0 !important;
+}
+
+.alert {text-align: center;
+
+}
+
 .card {
     border: none;
     background-color: transparent;
+}
+
+.card-body {
+    padding-top: 0;
+}
+
+.card-title {
+    margin-top: 1rem;
 }
 
 .image-container {
@@ -43,7 +62,7 @@ body {
     bottom: 5%;
     min-width: 30%;
     left: -2px;
-    background-color: #188181;
+    background-color: #e87510;
 }
 
 .scale {
@@ -77,28 +96,24 @@ body {
     overflow: hidden;
 }
 
-.masthead-image:after {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 90%;
-    height: 100%;
-    width: 150%;
-    background: #445261;
-    -webkit-transform: skew(15deg);
-    -moz-transform: skew(15deg);
-    transform: skew(15deg);
-    z-index: 100;
-}
-
 .post-link {
     text-decoration: none;
     color: #445261;
 }
 
-.post-link:hover,
+.post-link:hover{
+    color:  #e87510;
+}
+
 .page-link {
-    color: #E84610;
+    background-color: #e87510;
+    color: #fff;
+}
+
+.page-link:hover,
+.page-link:active {
+    background-color: #fff;
+    color: #e87510;
 }
 
 .post-title {
@@ -113,41 +128,41 @@ body {
 
 .btn-signup,
 .btn-edit {
-    background-color: #188181;
+    background-color: #e87510;
     color: #fff;
 }
 
 .btn-signup:hover,
 .btn-signup:active {
     background-color: #fff;
-    color: #23BBBB;
+    color: #e87510;
 }
 
 .link {
-    color: #23BBBB;
+    color: #e87510;
     text-decoration: none;
 }
 
 .link:hover,
 .link:active {
     color: #44615d;
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 .btn-like {
-    color: #E84610;
+    color: #e87510;
     border: none;
     background: transparent;
 }
 
 .btn-delete {
     color: #fff;
-    background: #E84610;
+    background: #e87510;
 }
 
 .btn-like:hover,
 .btn-like:active {
-    color: #E84610;
+    color: #e87510;
     background: transparent;
     border: none;
 }
@@ -158,4 +173,8 @@ body {
 
 .approval {
     color: rgb(222, 146, 168);
+}
+
+.footer-text {
+    color: #445261;
 }
