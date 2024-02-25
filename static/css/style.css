@@ -29,9 +29,26 @@ body {
     background-color: #F9FAFC;
 }
 
+.logged, 
+.alert {
+    margin-bottom: 0 !important;
+}
+
+.alert {text-align: center;
+
+}
+
 .card {
     border: none;
     background-color: transparent;
+}
+
+.card-body {
+    padding-top: 0;
+}
+
+.card-title {
+    margin-top: 1rem;
 }
 
 .image-container {
@@ -91,6 +108,7 @@ body {
     color: #fff;
 }
 
+.page-link:hover,
 .page-link:active {
     background-color: #fff;
     color: #e87510;
@@ -126,7 +144,7 @@ body {
 .link:hover,
 .link:active {
     color: #44615d;
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 .btn-like {
