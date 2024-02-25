@@ -1,10 +1,12 @@
 body {
     font-family: Montserrat, sans-serif;
     background-color: #F9FAFC;
+    
 }
 
 .navbar {
-    background-color: #d3d7d7;
+    /* background-color: #d3d7d7; */
+    background-color: yellow;
 }
 
 .brand {
