@@ -1,5 +1,5 @@
 from django.shortcuts import render, get_object_or_404, reverse
-from django.views import generic
+from django.views import generic, View
 from django.contrib import messages
 from django.http import HttpResponseRedirect
 from .models import Post, Comment
@@ -96,3 +96,18 @@ def comment_delete(request, slug, comment_id):
     return HttpResponseRedirect(reverse('post_detail', args=[slug]))
 
 
+class PostLike(View):
+
+    def post(self, request, slug):
+        post = get_object_or_404(Post, slug=slug)
+
+        if post.likes.filter(id=request.user.id).exists():
+            post.likes.remove(request.user)
+            messages.add_message(
+                request, messages.ERROR, 'You have just unliked this post')
+        else:
+            post.likes.add(request.user)
+            messages.add_message(
+                request, messages.SUCCESS, 'You have liked this post')
+
+        return HttpResponseRedirect(reverse('post_detail', args=[slug]))

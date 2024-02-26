@@ -36,6 +36,37 @@
             </div>
         </div>
     </div>
+
+  <!-- Displaying like button and count -->
+  <div class="row">
+    <div class="col-12">
+      {% if user.is_authenticated %}
+      {% else %}
+      Please, <a href="{% url 'account_login' %}" class="link">log in</a> if you would like to interact with
+      this post.
+      {% endif %}
+      <br>
+      <!-- Like button to change from outlined to solid when liked by user -->
+      <strong>
+        {% if user.is_authenticated %}
+        <form class="d-inline" action="{% url 'post_like' post.slug %}" method="POST">
+          {% csrf_token %}
+          {% if liked %}
+          <button type="submit" name="blogpost_id" value="{{ post.slug }}" class="text-secondary btn-like"><i
+              class="fa-solid fa-heart"></i></button>
+          {% else %}
+          <button type="submit" name="blogpost_id" value="{{ post.slug }}" class="text-secondary btn-like"><i
+              class="fa-regular fa-heart"></i></button>
+          {% endif %}
+        </form>
+        {% else %}
+        <span class="text-secondary btn-like"><i class="fa-regular fa-heart"></i></span>
+        {% endif %}
+        <span class="text-secondary">{{ post.number_of_likes }}</span>
+      </strong>
+    </div>
+  </div>
+
     <!-- Displaying count of comments -->
     <div class="row">
         <div class="col-12">
@@ -98,7 +129,7 @@
               class="btn btn-signup btn-lg">Submit</button>
           </form>
           {% else %}
-          <p>Log in to leave a comment</p>
+          <p><a href="{% url 'account_login' %}" class="link">Log in</a> to leave a comment.</p>
           {% endif %}
         </div>
       </div>

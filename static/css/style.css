@@ -148,22 +148,9 @@ body {
     text-decoration: none;
 }
 
-.btn-like {
-    color: #e87510;
-    border: none;
-    background: transparent;
-}
-
 .btn-delete {
     color: #fff;
     background: #e87510;
-}
-
-.btn-like:hover,
-.btn-like:active {
-    color: #e87510;
-    background: transparent;
-    border: none;
 }
 
 .faded {
