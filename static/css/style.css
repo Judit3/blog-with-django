@@ -153,6 +153,11 @@ body {
     background: #e87510;
 }
 
+.btn-like {
+    background-color: #fff;
+    border: none;
+}
+
 .faded {
     color: rgb(172, 175, 175);
 }
