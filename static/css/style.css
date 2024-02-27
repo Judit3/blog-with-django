@@ -86,13 +86,13 @@ body {
 
 .masthead-text {
     background-color: #445261;
-    color: white;
+    color: #fff;
     position: relative;
 }
 
 .masthead-image {
     position: relative;
-    overflow: hidden;
+    overflow: hidden;    
 }
 
 .post-link {
@@ -154,7 +154,7 @@ body {
 }
 
 .btn-like {
-    background-color: #fff;
+    background-color: #F9FAFC;
     border: none;
 }
 
