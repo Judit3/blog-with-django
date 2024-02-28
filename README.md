@@ -18,82 +18,25 @@ You can check out the [live-site.](https://blog-with-django-ju-bff470dd15f2.hero
   * [User stories](#user-stories)
     + [Workflow](#workflow)
 - [Design](#design)
-  * [Wireframes](#wireframes)
-    + [Timeline](#timeline)
-    + [Profile](#profile)
+  *  [Colour scheme](#colour-scheme)
+  *  [Typography](#typography)
+  *  [Imagery](#imagery)
+  *  [Wireframes](#wireframes)
+    + [Home](#home)
+    + [Register](#register)
+    + [Login](#login)
 - [Features](#features)
-  * [Existing Features](#existing-features)
-    + [Navigation Bar](#navigation-bar)
-      - [Visitors](#visitors)
-      - [Signed-In Users](#signed-in-users)
-      - [Admins](#admins)
-    + [User Account:](#user-account)
-      - [User Sign up](#user-sign-up)
-      - [User Login](#user-login)
-      - [User Logout](#user-logout)
-      - [change Password](#change-password)
-      - [Reset Password, through mail](#reset-password-through-mail)
-      - [Delete User Account](#delete-user-account)
-      - [Access Settings](#access-settings)
-    + [Profile:](#profile)
-      - [Profile Picture and Bio](#profile-picture-and-bio)
-      - [User Content Display](#user-content-display)
-      - [Vote Collection](#vote-collection)
-    + [Threads, Comments, Votes:](#threads-comments-votes)
-      - [Create Threads](#create-threads)
-      - [Create Comments](#create-comments)
-      - [Upvote and Downvote](#upvote-and-downvote)
-      - [Edit Threads](#edit-threads)
-      - [Edit Comments](#edit-comments)
-      - [Delete Threads and Comments](#delete-threads-and-comments)
-      - [Change or Delete Votes](#change-or-delete-votes)
-    + [Tags:](#tags)
-      - [Tag Site](#tag-site)
-      - [Follow Tags](#follow-tags)
-      - [Unfollow Tags](#unfollow-tags)
-      - [Overview over all tags you follow](#overview-over-all-tags-you-follow)
-    + [Global and Tag-based Timeline:](#global-and-tag-based-timeline)
-      - [Global Timeline](#global-timeline)
-      - [Personalized Tag Timeline](#personalized-tag-timeline)
-      - [Pagination](#pagination)
-    + [Messages](#messages)
-    + [Django Admin Panel](#django-admin-panel)
-    + [Info Page](#info-page)
-  * [Features Left to Implement](#features-left-to-implement)
-    + [Moderation:](#moderation)
-    + [Dark Mode:](#dark-mode)
-  * [Accessibility](#accessibility)
-    + [Fonts](#fonts)
-    + [Colors](#colors)
-- [Data](#data)
-  * [Database schema](#database-schema)
-- [Security](#security)
-- [Testing](#testing)
-    + [Lighthouse Test](#lighthouse-test)
-    + [Jigsaw CSS Validator](#jigsaw-css-validator)
-    + [W3C Validator](#w3c-validator)
-    + [JS Hint Validator](#js-hint-validator)
-    + [Accessibility](#accessibility-1)
-    + [PEP8](#pep8)
-  * [Manual Testing](#manual-testing)
-  * [Automatic Testing](#automatic-testing)
-  * [Fixed Bugs](#fixed-bugs)
-    + [Cascading Deletes for Votes](#cascading-deletes-for-votes)
-      - [The Situation:](#the-situation)
-      - [The Problem:](#the-problem)
-      - [The Solution:](#the-solution)
-    + [Default Pictures get deleted](#default-pictures-get-deleted)
-      - [The Situation:](#the-situation-1)
-      - [The Problem:](#the-problem-1)
-      - [The Solution:](#the-solution-1)
-- [Deployment](#deployment)
-  * [Local Development](#local-development)
-    + [How to Clone](#how-to-clone)
-    + [How to Fork](#how-to-fork)
-  * [Deploy locally](#deploy-locally)
-    + [Usage](#usage)
-  * [Deployment Using Heroku](#deployment-using-heroku)
-- [Credits](#credits)
+  * [Navigation bar in header](#navigation-bar-in-header)
+  * [Social media icons in footer](#social-media-icons-in-footer)
+  * [Home page](#home-page)
+  * [Register page](#register-page)
+  * [Login page](#login-page)
+  * [Future implementations](#future-implementations)
+  * [Accessibility](#accessibility) 
+
+ 
+    
+    
 
 ## Technologies Used
 
@@ -154,5 +97,92 @@ These concepts were presented to other people for feedback and evaluation. Their
 
 <!-- ![balsamic mockup design idea](link to image in static folder) -->
 
+### Colour scheme
 
+![Colour scheme](assets/images/readme/colour-scheme.png) 
+
+The website uses a palette of pastel colours that are often used in the swhomes images. The colour palette was created using the [Coolors](https://coolors.co/) website.
+
+### Typography
+
+Google Fonts was used for the Roboto Mono, it is used for the entire site. It is a sans-serif font. It was chosen as it looked clean and modern.
+
+![Font](assets/images/readme/font.png)
+
+### Imagery
+
+The home and contact images were taken from Pexels.com. All gallery images were taken from archdaily.com. I have credited these in the [Credits](#Credits) section.
+All images were compressed through imagify.io and some formats were changed using cloudconvert.com. Chosen images are by random artists and were picked solely based on the style of the business product.
+
+### Wireframes
+
+#### Home
+
+<!-- ![Wireframe desktop and movile Home] (link to balsamic destock img in static) -->
+
+#### Register
+
+<!-- ![Wireframe desktop and movile Register] (link to balsamic destock img in static) -->
+
+### Login
+
+<!-- ![Wireframe desktop and movile Login] (link to balsamic destock img in static) -->
+
+
+### Features
+
+#### Navigation bar in header
+
+This website is comprised of three pages, all of them are accessible from the navigation menu. The full responsive navigation bar includes links from the name of the web (Bread) to the Home page, and links to each of the three pages, Home, Register and Login, and is identical in each page to allow for easy navigation.
+
+The navigation bar is located in the upper right corner and for smaller screens it is responsive becoming a hamburger menu. 
+
+This section will allow the user to easily navigate from page to page across all devices without having to revert back to the previous page via the ‘back’ button. 
+
+The inactive page names are faded while the active page name is regular to allow easy understanding of where the user is within the website.
+
+Desktop nav bar
+
+<!-- ![Navbar](static/images/readme/navbar.png) -->
+
+Mobile hamburger nav bar
+
+<!-- ![Hamburger navbar](static/images/readme/navbar-hamburger.png) -->
+
+#### Social media icons in footer 
+
+The website includes four social media icons for Facebook, X, Youtube and Instagram. The icons were sourced from fontawasome.com and its colour was changed to fit the colour palette of the website.
+  
+<!-- ![Footer](static/images/readme/footer.png) -->
+
+#### Home page
+
+The home page has a grey background, it presents the post grouped in three per window, with buttons to allow the navigation through the home page, giving the visitor an idea of what they are going to find in the website.
+
+<!-- ![Home page](static/images/readme/home-page.png) -->
+
+#### Register page
+
+The register page allows user to create a profile to be able to interact whit the posts via comments and or likes/unlikes.
+
+<!-- ![Register page](assets/images/readme/about-page.png) -->
+
+#### Login page
+
+The gallery page provides the images of modern Swedish wooden houses.
+
+<!-- ![Login page](assets/images/readme/gallery-page.png) --->
+
+#### Future implementations
+
+<!-- provide ways for the users to comunicate directly with the website owner, 
+aloow users to create comments
+add to favourites
+to provide a more complete experience -->
+
+Overall performance of the website can be improved as some parts of the site are slowing it down. Unfortunately, this type of addition required more technical knowledge.
+
+#### Accessibility
+
+Alt-labels are used for images. Aria-labels for screen readers are implemented at certain places, also semantic elements are used so the page is easy to navigate.
 
