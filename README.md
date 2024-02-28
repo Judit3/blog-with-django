@@ -6,4 +6,4 @@ Bread is powered by Python, using a Django web framework. The user interface is 
 
 You can check out the [live-site.](https://blog-with-django-ju-bff470dd15f2.herokuapp.com/)
 
-![Mock Up](static/imges/readme/responsive.png)
+![Responsive](static/images/readme/responsive.png)
