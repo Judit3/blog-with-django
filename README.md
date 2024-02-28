@@ -115,7 +115,7 @@ You can check out the [live-site.](https://blog-with-django-ju-bff470dd15f2.hero
 
 Python, HTML/CSS, JavaScript
 
-### Frameworks, Libraries & Programs Used
+### Frameworks and Libraries Used
 
 * Git / Github
 * Bootstrap
