@@ -79,20 +79,8 @@ body {
     margin-top: 10px;
     overflow: hidden;
     position: relative;
-    display: inline-block;
     height: 33vh;
     width: 100%;
-}
-
-.masthead-text {
-    background-color: #445261;
-    color: #fff;
-    position: relative;
-}
-
-.masthead-image {
-    position: relative;
-    overflow: hidden;    
 }
 
 .post-link {
@@ -168,8 +156,4 @@ body {
 
 .footer-text {
     color: #445261;
-}
-
-.card-img {
-   
 }

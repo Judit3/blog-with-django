@@ -4,7 +4,6 @@
 
 <div class="masthead">
   <div class="container">
-    <div class="row g-0">
       <div class="card text-white">
         {% if "placeholder" in post.featured_image.url %}
         <img class="card-img" src="{% static 'images/img1.jpg' %}" alt="placeholder image">
@@ -15,7 +14,6 @@
           <h1 class="card-title">{{ post.title }}</h1>
           <p class="card-text">{{ post.author }} | {{ post.created_on }}</p>
         </div>
-      </div>
     </div>
   </div>
 </div>

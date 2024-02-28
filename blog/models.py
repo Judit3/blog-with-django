@@ -18,7 +18,7 @@ class Post(models.Model):
     excerpt = models.TextField(blank=True)
     updated_on = models.DateTimeField(auto_now=True)
     likes = models.ManyToManyField(User, related_name="post_likes", blank=True)
-
+    
     class Meta:
         ordering = ["-created_on"]
 
@@ -27,6 +27,7 @@ class Post(models.Model):
 
     def number_of_likes(self):
         return self.likes.count()  
+
 
 
 class Comment(models.Model):
