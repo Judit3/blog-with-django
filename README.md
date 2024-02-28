@@ -40,22 +40,24 @@ You can check out the [live-site.](https://blog-with-django-ju-bff470dd15f2.hero
 
 ## Technologies Used
 
-**GitHub** – storage and deployment
-**Gitpod** - Editor
-**Heroku** - Deployment
-**Cloudinary** - Cloud storage for static images
-**ElephantSQL** - PostgreSQL database
-**Google Fonts** – import font
-**Font Awesome**- import social media and contact icons
-**Favicon Generator Website** – convert logo
-<!-- **Balsamiq** – wireframes design -->
-**Am I Responsive?** – check responsiveness of the website
-**Google Maps** – embed map location
-**Google Chrome** - build and test the website
+- **GitHub** – storage and deployment
+- **Gitpod** - Editor
+- **Heroku** - Deployment
+- **Cloudinary** - Cloud storage for static images
+- **ElephantSQL** - PostgreSQL database
+- **Google Fonts** – import font
+- **Font Awesome**- import social media and contact icons
+- **Favicon Generator Website** – convert logo
+<!-- - **Balsamiq** – wireframes design -->
+- **Am I Responsive?** – check responsiveness of the website
+- **Google Maps** – embed map location
+- **Google Chrome** - build and test the website
 
 ### Languages Used
 
-Python, HTML/CSS, JavaScript
+- Python
+- HTML/CSS
+- JavaScript
 
 ### Frameworks and Libraries Used
 
@@ -142,9 +144,18 @@ This section will allow the user to easily navigate from page to page across all
 
 The inactive page names are faded while the active page name is regular to allow easy understanding of where the user is within the website.
 
-Desktop nav bar
+The nav bar addapts if user is logged in or not.
+
+Desktop nav bar:
+
+- Not logged in
 
 <!-- ![Navbar](static/images/readme/navbar.png) -->
+
+- Logged in
+
+<!-- ![Navbar logged in](static/images/readme/navbar-loggedin.png) -->
+
 
 Mobile hamburger nav bar
 
@@ -159,6 +170,8 @@ The website includes four social media icons for Facebook, X, Instagram and Yout
 #### Home page
 
 The home page has a grey background, it presents the post grouped in three per window, with buttons to allow the navigation through the home page, giving the visitor an idea of what they are going to find in the website.
+
+It is set up using Bootstrap cards with three cards per row and three cards per window.
 
 <!-- ![Home page](static/images/readme/home-page.png) -->
 
