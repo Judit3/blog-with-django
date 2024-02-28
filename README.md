@@ -12,10 +12,9 @@ You can check out the [live-site.](https://blog-with-django-ju-bff470dd15f2.hero
 
 - [Technologies Used](#technologies-used)
   * [Languages Used](#languages-used)
-  * [Frameworks, Libraries & Programs Used](#frameworks-libraries--programs-used)
+  * [Frameworks and Libraries Used](#frameworks-libraries-used)
 - [User Experience and Workflow](#user-experience-and-workflow)
   * [Target Audience](#target-audience)
-  * [Epics](#epics)
   * [User stories](#user-stories)
     + [Workflow](#workflow)
 - [Design](#design)
