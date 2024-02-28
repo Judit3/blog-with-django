@@ -99,20 +99,21 @@ These concepts were presented to other people for feedback and evaluation. Their
 
 ### Colour scheme
 
-![Colour scheme](assets/images/readme/colour-scheme.png) 
+![Colour scheme](static/images/readme/colour-scheme.png) 
 
-The website uses a palette of pastel colours that are often used in the swhomes images. The colour palette was created using the [Coolors](https://coolors.co/) website.
+The website uses a palette of colours that are fitting the colour palette of the Bread website images. The colour palette was created using the [Coolors](https://coolors.co/) website.
 
 ### Typography
 
-Google Fonts was used for the Roboto Mono, it is used for the entire site. It is a sans-serif font. It was chosen as it looked clean and modern.
+Google Fonts was used for the Montserrat, it is used for the entire site. It is a sans-serif font. It was chosen as it looked clean and modern.
 
-![Font](assets/images/readme/font.png)
+![Font](static/images/readme/font.png)
 
 ### Imagery
 
-The home and contact images were taken from Pexels.com. All gallery images were taken from archdaily.com. I have credited these in the [Credits](#Credits) section.
-All images were compressed through imagify.io and some formats were changed using cloudconvert.com. Chosen images are by random artists and were picked solely based on the style of the business product.
+The blog images were taken from [Unsplash](https://unsplash.com). I have credited these in the [Credits](#Credits) section.
+<!-- All images were compressed through imagify.io and some formats were changed using cloudconvert.com. -->
+Chosen images are by random artists and were picked solely based on the style of the business product.
 
 ### Wireframes
 
@@ -151,7 +152,7 @@ Mobile hamburger nav bar
 
 #### Social media icons in footer 
 
-The website includes four social media icons for Facebook, X, Youtube and Instagram. The icons were sourced from fontawasome.com and its colour was changed to fit the colour palette of the website.
+The website includes four social media icons for Facebook, X, Instagram and Youtube. The icons were sourced from [Fontawasome](https://fontawesome.com/) and their colour was changed to fit the colour palette of the website.
   
 <!-- ![Footer](static/images/readme/footer.png) -->
 
@@ -163,13 +164,13 @@ The home page has a grey background, it presents the post grouped in three per w
 
 #### Register page
 
-The register page allows user to create a profile to be able to interact whit the posts via comments and or likes/unlikes.
+The register page allows user to create a profile to be able to interact whit the posts.
 
 <!-- ![Register page](assets/images/readme/about-page.png) -->
 
 #### Login page
 
-The gallery page provides the images of modern Swedish wooden houses.
+The login page allows the users to login to interact with the posts, via comments and/or likes/unlikes, once they are registered.
 
 <!-- ![Login page](assets/images/readme/gallery-page.png) --->
 
