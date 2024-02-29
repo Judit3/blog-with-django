@@ -41,15 +41,17 @@ def post_detail(request, slug):
                 request, messages.SUCCESS,
                 'Comment submitted and awaiting approval'
             )
+        
+        return HttpResponseRedirect(reverse('post_detail', args=[slug]))
 
     comment_form = CommentForm()
 
     return render(
-        request, 
-        "blog/post_detail.html", 
+        request,
+        "blog/post_detail.html",
         {
-            "post": post, 
-            "comments": comments, 
+            "post": post,
+            "comments": comments,
             "comment_count": comment_count,
             "comment_form": comment_form,
         },
@@ -76,7 +78,7 @@ def comment_edit(request, slug, comment_id):
         else:
             messages.add_message(request, messages.ERROR, 'Error updating comment!')
 
-    return HttpResponseRedirect(reverse('post_detail', args=[slug])) 
+    return HttpResponseRedirect(reverse('post_detail', args=[slug]))
 
 
 def comment_delete(request, slug, comment_id):
@@ -113,5 +115,3 @@ class PostLike(View):
                 request, messages.SUCCESS, 'You have liked this post')
 
         return HttpResponseRedirect(reverse('post_detail', args=[slug]))
-
-
