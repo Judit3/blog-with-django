@@ -162,24 +162,24 @@ It is set up using Bootstrap cards with three cards per row and three cards per 
 The register page allows users to create a profile to be able to interact whit the posts.
 The user accounts are managed by the AllAuth Django package. After registration all their information is stored in the database. 
 
-![Register page](assets/images/readme/register-page.png)
+![Register page](static/images/readme/register-page.png)
 
 #### Login page
 
 Registered users can log in to their accounts using their credentials. The login page allows users to login to interact with the posts, via comments and/or likes/unlikes, once they are registered.
 
-![Login page](assets/images/readme/login-page.png)
+![Login page](static/images/readme/login-page.png)
 
 Logged in users can log out of the site by clicking the logout link in the navigation bar. The log out needs to be confirmed.
 
-![Signout page](assets/images/readme/signout-page.png)
+![Signout page](static/images/readme/signout-page.png)
 
 #### Posts
 
 Once the user click on one post of the home page, the page hosting the post is open, it shows the post image, the post content, the like/unlike icon, a counter of comments icon and a section to write and show users commets.
 
-![Post pager upper part](assets/images/readme/post-page-1.png)
-![Post pager lower part](assets/images/readme/post-page-2.png)
+![Post pager upper part](static/images/readme/post-page-1.png)
+![Post pager lower part](static/images/readme/post-page-2.png)
 
 #### Comments
 
@@ -189,22 +189,22 @@ Comments can be voted by the users and the count of the votes per post is displa
 
 Comments can be edited and deleted. Confirmation is required before deletion. Messages are launched when a post is edited or deleted.
 
-![Comments](assets/images/readme/post-page-2.png)
-![Comment deletion confirmation](assets/images/readme/delete-confirmation.png)
-![Comment edit](assets/images/readme/edit-comment.png)
-![Edit message](assets/images/readme/edit-message.png)
+![Comments](static/images/readme/post-page-2.png)
+![Comment deletion confirmation](static/images/readme/delete-confirmation.png)
+![Comment edit](static/images/readme/edit-comment.png)
+![Edit message](static/images/readme/edit-message.png)
 
 #### Messages
 
 The users are notified about changes on the platform through the django message system.
 
-![Example message](assets/images/readme/message.png)
+![Example message](static/images/readme/message.png)
 
 #### Admin panel
 
 Inside the Django Admin panel, Administrators have acces to the models of the django project.
 
-![Admin panel](assets/images/readme/admin.png)
+![Admin panel](static/images/readme/admin.png)
 
 #### Future implementations
 
