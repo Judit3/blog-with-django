@@ -7,6 +7,10 @@ from .forms import CommentForm
 
 
 class PostList(generic.ListView):
+    """
+    This class is setting the blog post list
+    to be laid out in a style of 3 posts per page.
+    """
     queryset = Post.objects.filter(status=1)
     template_name = "blog/index.html"
     paginate_by = 3
@@ -14,18 +18,15 @@ class PostList(generic.ListView):
 
 def post_detail(request, slug):
     """
-    Display an individual :model:`blog.Post`.
-
-    **Context**
-
-    ``post``
-        An instance of :model:`blog.Post`.
-
-    **Template:**
-
-    :template:`blog/post_detail.html`
+    This function allowes users to place a comment below a
+    blog post and to display a message to the user to
+    inform them that their comment is awaiting approval.
+    This message only displays to the user who has placed
+    the comment. This will return the user to the blog
+    post they had been on when they placed the comment.
+    Displaying an individual blog post as a model
+    Interpreting model from url post_detail.html in blog
     """
-
     queryset = Post.objects.filter(status=1)
     post = get_object_or_404(queryset, slug=slug)
     comments = post.comments.all().order_by("-created_on")

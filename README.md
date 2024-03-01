@@ -40,10 +40,11 @@ You can check out the [live-site.](https://blog-with-django-ju-bff470dd15f2.hero
   * [Languages Used](#languages-used)
   * [Frameworks and Libraries Used](#frameworks-libraries-used) 
 - [Deployment](#deployment)
-    <!-- - [How to deploy](#how-to-deploy)
-    - [Local development](#local-development)
+    * [Local development](#local-development)
       - [How to clone](#how-to-clone)
       - [How to fork](#how-to-fork)
+    * [Deployment Using Heroku](#deployment-using-heroku)
+
   - [Testing](#testing)
     - [CSS validation](#css-validation)
     - [HTML validation](#html-validation)
@@ -51,7 +52,7 @@ You can check out the [live-site.](https://blog-with-django-ju-bff470dd15f2.hero
     - [Python validation](#python-validation)
     - [Performance](#performance)
     - [Accessibility](#accessibility-1)
-    - [Manual testing](#manual-testing) -->
+    - [Manual testing](#manual-testing)
   - [Bugs](#bugs)
   - [Credits](#credits)
     - [Code used](#code-used)
@@ -87,8 +88,6 @@ When working on the tasks begins, the status of the issues is updated to 'In Pro
 It was used as inspiration the CodeInstitute blog created with Django as it was found user friendly.
 
 These concepts were presented to other people for feedback and evaluation. Their insights and preferences were carefully considered for each design. Its warm colors and easy flair resonated with the audience.
-
-<!-- ![balsamic mockup design idea](link to image in static folder) -->
 
 ### Colour scheme
 
