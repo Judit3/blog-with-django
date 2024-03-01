@@ -89,6 +89,10 @@ body {
     object-fit: cover;
 }
 
+.card-title {
+    font-size: x-large;
+}
+
 .post-link {
     text-decoration: none;
     color: #445261;
@@ -173,6 +177,6 @@ body {
 
 #social-networks a {
     color: inherit;
-    font-size: 1.5rem;
+    font-size: 1rem;
     margin-right: 2rem;
 }

@@ -6,9 +6,9 @@
   <div class="container">
     <div class="card text-white">
       {% if "placeholder" in post.featured_image.url %}
-      <img class="card-img responsive-image" src="{% static 'images/img1.webp' %}" alt="placeholder image">
+      <img class="card-img-top responsive-image" src="{% static 'images/img1.webp' %}" alt="placeholder image">
       {% else %}
-      <img class="card-img responsive-image" src=" {{ post.featured_image.url }}" alt="{{ post.title }}">
+      <img class="card-img-top responsive-image" src=" {{ post.featured_image.url }}" alt="{{ post.title }}">
       {% endif %}
       <div class="card-img-overlay">
         <h1 class="card-title">{{ post.title }}</h1>
