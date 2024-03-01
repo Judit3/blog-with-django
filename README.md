@@ -287,24 +287,75 @@ To fork the repository:
 
 ### CSS validation
 
+- The CSS style.css stylesheet passed through [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/) with no errors returned.
+
+![CSS Validation](static/images/readme/css-validation.png)
+
 ### HTML validation
+
+- The HTML pages passed through the [W3 Nu HTML Checker](https://validator.w3.org/nu/) with no errors returned.
+
+![HTML Validation](static/images/readme/html-validation.png) 
 
 ### JavaScript validation
 
+- The JS file was ran through [JS Hint Linter](https://jshint.com/) and no errors were found.
+
+![JS Validation](static/images/readme/js-validation.png)
+
 ### Python validation
+
+- All Python files were passed through the [CI Python Linter](https://pep8ci.herokuapp.com/) and no errors were foundst of the files.
+
+![Python Validation](static/images/readme/pep8-validation.png)
+
+Nevertheless, a cuople of files showed the warning "line too long", which is not affecting the performance of the page.
+
+![Python Validation](static/images/readme/pep8-validation-long.png)
 
 ### Performance
 
+Website performance was checked with Lighthouse tool.
 
+![lighthouse test home](static/images/readme/lighthouse.png)
 
 ### Accessibility
 
+To check accessibility the Wave Web Accessibility Evaluation tool was used. No errors were detected. It mentions some contrast issues which are judged not critical by the author.
 
+![Wave test](static/images/readme/wave.png)
 
 ### Manual testing
+To ensure the functionality of the site on top of the written tests: All main features are tested manually.
 
-
-
+| Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
+| --- | --- | --- | --- | --- |
+| `Navbar` |
+||  |  |  |  |  |
+| Bread Title | When clicked the user will be redirected to the Home page. | Clicked Title | Redirected to the Home page. | Pass |
+| Home Page Link | When clicked the user will be redirected to the Home page.| Clicked link | Redirected to the Home page. | Pass |
+| Login Page Link | When clicked the user will be redirected to the login page. | Clicked link | Redirected to the login page. | Pass |
+| Register Page Link | When clicked the user will be redirected to the Register page. | Clicked link | Redirected to the Register page. | Pass |
+| Log out Page Link | When clicked the user will be redirected to the confirmation of log out page and confirmed to the Home page. | Clicked link | Redirected to the log out page and when confirmed to the Home page | Pass |
+| --- | --- | --- | --- | --- |
+| `Main` |
+|  |  |  |  |  |
+| Next and Prev Buttons | Next brings to next window, prev brings to previous | Press Nex and Prev buttons | Next brought to next window, previous brought to previous list of blog posts | Pass |
+| Full blog post display | On click of blog title in blog list full blog display | Click on the link of the post in the Home page | Full blog post is displayed |
+| Leaving a Comment | Logged in Users can leave a comment under a post. | Opening a post window. Filling out the comment form. submit the form. | The comment gets displayed under the post. | Pass |
+| Like Post | After pressing the thumb up under the post, the likes count should move 1 up and the user is notified about their action | Pressing the thumb. | The like counts +1. and the user is notified about their action | Pass |
+| Removing a like on a post. | By pressing on the thumb of an already liked post, the like count should be removed, down-counting the like counts by 1 and the user is notified about their action | Press the like button again. | The like count is removed. Downcountin the likes count by 1 and the user is notified about their action. | Pass |
+| Messages when user interacts with the webpage | A message is displayed on the top of page under the headerat can be removed manually by the user | Signup, Log in, leave a comment, like/unlike a post | A message is displayed on the top of page under the headerat can be removed manually by the user | Pass |
+| Sign Up | When the User is signing up with valid credentials, an account should be created. After Signing up, the User is logged in. | Signing up with username = test, email = test@test.es,  password = Secure123! | The User is logged in. An Account has been created. | Pass |
+| Invalid Sign Up | When the User is signing in with invalid credentials, they get informed about the invalid data. | Signing up with email = cc and password = 123 | The User gets informed about an invalid email and password. | Pass |
+| Login | Can login in with the correct password and username. | Login with username = test,  password = Secure123! | User is logged in. | Pass |
+| Invalid Login | Users can't login with invalid credentials. | Login with username = test, password = aSecure123! | The user is not logged in. | Pass |
+| Logout | After Confirming to logout, the user gets logged out. | Pressing Button to confirm the logout. | User is logged out. | Pass |
+| --- | --- | --- | --- | --- |
+| `Footer` |
+|  |  |  |  |  |
+| Social Media Icons | When clicked the user will be redirected to the appropriate social media pages in a new window. | Clicked icon | Redirected to the social media page in a new window. | Pass |
+| --- | --- | --- | --- | --- |
 
 
 Following devices and browsers were used:
@@ -325,6 +376,8 @@ Browsers:
 ---
 
 ## Bugs
+
+No bugs were detected.
 
 ---
 
