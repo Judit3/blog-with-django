@@ -79,20 +79,18 @@ body {
     margin-top: 10px;
     overflow: hidden;
     position: relative;
-    display: inline-block;
     height: 33vh;
     width: 100%;
 }
 
-.masthead-text {
-    background-color: #445261;
-    color: white;
-    position: relative;
+.responsive-image {
+    width: 100%;
+    height: 33vh;
+    object-fit: cover;
 }
 
-.masthead-image {
-    position: relative;
-    overflow: hidden;
+.card-title {
+    font-size: x-large;
 }
 
 .post-link {
@@ -148,21 +146,13 @@ body {
     text-decoration: none;
 }
 
-.btn-like {
-    color: #e87510;
-    border: none;
-    background: transparent;
-}
-
 .btn-delete {
     color: #fff;
     background: #e87510;
 }
 
-.btn-like:hover,
-.btn-like:active {
-    color: #e87510;
-    background: transparent;
+.btn-like {
+    background-color: #F9FAFC;
     border: none;
 }
 
@@ -176,4 +166,17 @@ body {
 
 .footer-text {
     color: #445261;
+}
+
+#social-networks {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 0;
+}
+
+#social-networks a {
+    color: #44615d;
+    font-size: 1rem;
+    margin-right: 2rem;
 }
