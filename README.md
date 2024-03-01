@@ -24,19 +24,40 @@ You can check out the [live-site.](https://blog-with-django-ju-bff470dd15f2.hero
     + [Home](#home)
     + [Register](#register)
     + [Login](#login)
-- [Features](#features)
-  * [Navigation bar in header](#navigation-bar-in-header)
-  * [Social media icons in footer](#social-media-icons-in-footer)
-  * [Home page](#home-page)
-  * [Register page](#register-page)
-  * [Login page](#login-page)
-  * [Future implementations](#future-implementations)
-  * [Accessibility](#accessibility) 
-
- 
+  * [Features](#features)
+    + [Navigation bar in header](#navigation-bar-in-header)
+    + [Social media icons in footer](#social-media-icons-in-footer)
+    + [Home page](#home-page)
+    + [Register page](#register-page)
+    + [Login page](#login-page)
+    + [Posts](#posts)
+    + [Comments](#comments)
+    + [Messages](#messages)
+    + [Admin panel](#admin-panel)
+    + [Future implementations](#future-implementations)
+    + [Accessibility](#accessibility) 
 - [Technologies Used](#technologies-used)
   * [Languages Used](#languages-used)
   * [Frameworks and Libraries Used](#frameworks-libraries-used) 
+- [Deployment](#deployment)
+    <!-- - [How to deploy](#how-to-deploy)
+    - [Local development](#local-development)
+      - [How to clone](#how-to-clone)
+      - [How to fork](#how-to-fork)
+  - [Testing](#testing)
+    - [CSS validation](#css-validation)
+    - [HTML validation](#html-validation)
+    - [JavaScript validation](#javascript-validation)
+    - [Python validation](#python-validation)
+    - [Performance](#performance)
+    - [Accessibility](#accessibility-1)
+    - [Manual testing](#manual-testing) -->
+  - [Bugs](#bugs)
+  - [Credits](#credits)
+    - [Code used](#code-used)
+    - [Content](#content)
+    - [Media](#media)
+    - [Acknowledgments](#acknowledgments)
 
 
 ---
@@ -111,49 +132,83 @@ Desktop nav bar:
 
 - Not logged in
 
-<!-- ![Navbar](static/images/readme/navbar.png) -->
+![Navbar](static/images/readme/navbar-nl.png)
 
 - Logged in
 
-<!-- ![Navbar logged in](static/images/readme/navbar-loggedin.png) -->
+![Navbar logged in](static/images/readme/navbar-l.png)
 
 
-Mobile hamburger nav bar
+- Mobile hamburger nav bar
 
-<!-- ![Hamburger navbar](static/images/readme/navbar-hamburger.png) -->
+![Hamburger navbar](static/images/readme/navbar-m-l.png)
 
 #### Social media icons in footer 
 
 The website includes four social media icons for Facebook, X, Instagram and Youtube. The icons were sourced from [Fontawasome](https://fontawesome.com/) and their colour was changed to fit the colour palette of the website.
   
-<!-- ![Footer](static/images/readme/footer.png) -->
+![Footer](static/images/readme/footer.png)
 
 #### Home page
 
-The home page has a grey background, it presents the post grouped in three per window, with buttons to allow the navigation through the home page, giving the visitor an idea of what they are going to find in the website.
+The home page has a grey background, it presents the posts grouped in three per window. It is used pagination to allow the navigation through the home page, giving the visitor an idea of what they are going to find in the website.
 
 It is set up using Bootstrap cards with three cards per row and three cards per window.
 
-<!-- ![Home page](static/images/readme/home-page.png) -->
+![Home page](static/images/readme/home-page.png)
 
 #### Register page
 
-The register page allows user to create a profile to be able to interact whit the posts.
+The register page allows users to create a profile to be able to interact whit the posts.
+The user accounts are managed by the AllAuth Django package. After registration all their information is stored in the database. 
 
-<!-- ![Register page](assets/images/readme/about-page.png) -->
+![Register page](assets/images/readme/register-page.png)
 
 #### Login page
 
-The login page allows the users to login to interact with the posts, via comments and/or likes/unlikes, once they are registered.
+Registered users can log in to their accounts using their credentials. The login page allows users to login to interact with the posts, via comments and/or likes/unlikes, once they are registered.
 
-<!-- ![Login page](assets/images/readme/gallery-page.png) --->
+![Login page](assets/images/readme/login-page.png)
+
+Logged in users can log out of the site by clicking the logout link in the navigation bar. The log out needs to be confirmed.
+
+![Signout page](assets/images/readme/signout-page.png)
+
+#### Posts
+
+Once the user click on one post of the home page, the page hosting the post is open, it shows the post image, the post content, the like/unlike icon, a counter of comments icon and a section to write and show users commets.
+
+![Post pager upper part](assets/images/readme/post-page-1.png)
+![Post pager lower part](assets/images/readme/post-page-2.png)
+
+#### Comments
+
+Users can comment the posts, through the comment field. The comments need to be approved by the admin to be shown in the website, otherwise just the user who did the comment can see it in fade color with a "waiting for approval" text under it.
+
+Comments can be voted by the users and the count of the votes per post is displayed in the post page.
+
+Comments can be edited and deleted. Confirmation is required before deletion. Messages are launched when a post is edited or deleted.
+
+![Comments](assets/images/readme/post-page-2.png)
+![Comment deletion confirmation](assets/images/readme/delete-confirmation.png)
+![Comment edit](assets/images/readme/edit-comment.png)
+![Edit message](assets/images/readme/edit-message.png)
+
+#### Messages
+
+The users are notified about changes on the platform through the django message system.
+
+![Example message](assets/images/readme/message.png)
+
+#### Admin panel
+
+Inside the Django Admin panel, Administrators have acces to the models of the django project.
+
+![Admin panel](assets/images/readme/admin.png)
 
 #### Future implementations
 
-<!-- provide ways for the users to comunicate directly with the website owner, 
-aloow users to create comments
-add to favourites
-to provide a more complete experience -->
+In futere versions of this website it is planned to provide ways for the users to comunicate directly with the website owner, a user profile page will be implemented where users will be able to create posts, add posts to favourites, change their access password, delete their account, to provide a more complete experience.
 
 Overall performance of the website can be improved as some parts of the site are slowing it down. Unfortunately, this type of addition required more technical knowledge.
 
@@ -161,22 +216,7 @@ Overall performance of the website can be improved as some parts of the site are
 
 Alt-labels are used for images. Aria-labels for screen readers are implemented at certain places, also semantic elements are used so the page is easy to navigate.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+---
 
 ## Technologies Used
 
@@ -188,7 +228,7 @@ Alt-labels are used for images. Aria-labels for screen readers are implemented a
 - **Google Fonts** – import font
 - **Font Awesome**- import social media and contact icons
 - **Favicon Generator Website** – convert logo
-<!-- - **Balsamiq** – wireframes design -->
+- **Balsamiq** – wireframes design
 - **Am I Responsive?** – check responsiveness of the website
 - **Google Maps** – embed map location
 - **Google Chrome** - build and test the website
@@ -201,14 +241,108 @@ Alt-labels are used for images. Aria-labels for screen readers are implemented a
 
 ### Frameworks and Libraries Used
 
-* Git / Github
+* Github
 * Bootstrap
-<!-- * [django-allauth](https://docs.allauth.org/en/latest/)
-* [django-crispy-forms](https://django-crispy-forms.readthedocs.io/en/latest/)
-* [pillow Imaging Library](https://pypi.org/project/pillow/)
-* [django-taggit](https://github.com/jazzband/django-taggit)
-* [markdown2](https://pypi.org/project/django-markdown2/)
-* [django-image-uploader-widget](https://pypi.org/project/django-image-uploader-widget/)
-* django-storages and boto3, for r2 bucket storage
-* [django-cleanup](https://github.com/un1t/django-cleanup)
-* django extensions for exporting DB schema -->
+* Django-allauth
+* Django-crispy-forms
+* Django-summernote
+
+---
+
+## Deployment
+
+### Local Development
+
+#### How to Clone
+
+1. Click the code button and copy the link of your preferred clone option.
+2. Open the terminal in your code editor and change the current working directory to the location you want to use for the cloned directory.
+3. Type 'git clone' into the terminal, paste the link you copied in step 1 and press enter.
+
+More detailed steps are provided by github: [github guide to clone a repository](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository)
+
+#### How to Fork
+
+To fork the repository:
+
+1. Log in (or sign up) to Github.
+2. Go to the repository for this project.
+3. Click the Fork button in the top right corner.
+
+### Deployment Using Heroku
+
+1. Register for an account on Heroku or sign in.
+2. Create a new app.
+3. Name your App.
+5. Connect your github repository to Heroku app.
+6. Create a Live Database by adding the postgreSQL add-on.
+7. Create a Cloudinary Account.
+8. Create and Set up an email account for verification mails.
+9. Set Config Vars for your cloudinary (*CLOUDINARY_URL*), database (*DATABASE_URL*) and email(*EMAIL_HOST_PASSWORD*).
+10. Deploy from "deploy", or choose an automatic deploy option.
+
+---
+
+## Testing
+
+### CSS validation
+
+### HTML validation
+
+### JavaScript validation
+
+### Python validation
+
+### Performance
+
+
+
+### Accessibility
+
+
+
+### Manual testing
+
+
+
+
+
+Following devices and browsers were used:
+
+Laptop:
+
+* Macbook Pro 
+
+Mobile Devices:
+
+* iPhone SE
+  
+Browsers:
+
+* Google Chrome
+* Safari
+
+---
+
+## Bugs
+
+---
+
+## Credits
+
+### Code used
+
+The code was mostly taken from the Blog Project Challenge of CodeInstitute and modified.
+
+### Content
+
+Content was partially written and created by the developer with inspiration from other Codeinstitute student projects.
+
+### Media
+
+Images were downloaded from royalty free website unsplash.com (<https://www.unsplash.com>).
+
+  
+### Acknowledgments
+
+My mentor Luke for continuous support and helpful feedback.
