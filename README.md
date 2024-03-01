@@ -8,6 +8,8 @@ You can check out the [live-site.](https://blog-with-django-ju-bff470dd15f2.hero
 
 ![Responsive](static/images/readme/responsive.png)
 
+---
+
 ## Content
 
 - [User Experience and Workflow](#user-experience-and-workflow)
@@ -37,6 +39,8 @@ You can check out the [live-site.](https://blog-with-django-ju-bff470dd15f2.hero
   * [Frameworks and Libraries Used](#frameworks-libraries-used) 
 
 
+---
+
 ## User Experience and Workflow
 
 ### Target Audience
@@ -55,6 +59,8 @@ In the development process, a Kanban board in form of a [github project](https:/
 When working on the tasks begins, the status of the issues is updated to 'In Process'. This signifies that active development is underway. Once the development work is completed, it is considered 'Done' and is moved to the final column on the Kanban board.
 
 ![Kanban-Board](static/images/readme/kanban-board.png)
+
+---
 
 ## Design
 It was used as inspiration the CodeInstitute blog created with Django as it was found user friendly.
@@ -78,23 +84,14 @@ Google Fonts was used for the Montserrat, it is used for the entire site. It is 
 ### Imagery
 
 The blog images were taken from [Unsplash](https://unsplash.com). I have credited these in the [Credits](#Credits) section.
-<!-- All images were compressed through imagify.io and some formats were changed using cloudconvert.com. -->
+All images were compressed through [Fotor foto editor](https://www.fotor.com) and some formats were changed using [Convertio](https://convertio.co)
 Chosen images are by random artists and were picked solely based on the style of the business product.
 
 ### Wireframes
 
 #### Home
 
-<!-- ![Wireframe desktop and movile Home] (link to balsamic destock img in static) -->
-
-#### Register
-
-<!-- ![Wireframe desktop and movile Register] (link to balsamic destock img in static) -->
-
-### Login
-
-<!-- ![Wireframe desktop and movile Login] (link to balsamic destock img in static) -->
-
+![Wireframe desktop and movile Home](static/images/readme/balsamic.png)
 
 ### Features
 
