@@ -16,6 +16,7 @@ You can check out the [live-site.](https://blog-with-django-ju-bff470dd15f2.hero
   * [Target Audience](#target-audience)
   * [User stories](#user-stories)
     + [Workflow](#workflow)
+    + [Data](#data)
 - [Design](#design)
   *  [Colour scheme](#colour-scheme)
   *  [Typography](#typography)
@@ -41,24 +42,23 @@ You can check out the [live-site.](https://blog-with-django-ju-bff470dd15f2.hero
   * [Frameworks and Libraries Used](#frameworks-libraries-used) 
 - [Deployment](#deployment)
     * [Local development](#local-development)
-      - [How to clone](#how-to-clone)
-      - [How to fork](#how-to-fork)
+      + [How to clone](#how-to-clone)
+      + [How to fork](#how-to-fork)
     * [Deployment Using Heroku](#deployment-using-heroku)
-
   - [Testing](#testing)
-    - [CSS validation](#css-validation)
-    - [HTML validation](#html-validation)
-    - [JavaScript validation](#javascript-validation)
-    - [Python validation](#python-validation)
-    - [Performance](#performance)
-    - [Accessibility](#accessibility-1)
-    - [Manual testing](#manual-testing)
+    * [CSS validation](#css-validation)
+    * [HTML validation](#html-validation)
+    * [JavaScript validation](#javascript-validation)
+    * [Python validation](#python-validation)
+    * [Performance](#performance)
+    * [Accessibility](#accessibility-1)
+    * [Manual testing](#manual-testing)
   - [Bugs](#bugs)
   - [Credits](#credits)
-    - [Code used](#code-used)
-    - [Content](#content)
-    - [Media](#media)
-    - [Acknowledgments](#acknowledgments)
+    * [Code used](#code-used)
+    * [Content](#content)
+    * [Media](#media)
+    * [Acknowledgments](#acknowledgments)
 
 
 ---
@@ -81,6 +81,12 @@ In the development process, a Kanban board in form of a [github project](https:/
 When working on the tasks begins, the status of the issues is updated to 'In Process'. This signifies that active development is underway. Once the development work is completed, it is considered 'Done' and is moved to the final column on the Kanban board.
 
 ![Kanban-Board](static/images/readme/kanban-board.png)
+
+#### Data
+
+The Database was thought to be as the shown in the diagram: 
+
+![ERD](static/images/readme/erd.png)
 
 ---
 
