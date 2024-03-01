@@ -84,7 +84,7 @@ When working on the tasks begins, the status of the issues is updated to 'In Pro
 
 #### Data
 
-The Database was thought to be as the shown in the diagram: 
+The Database was thought to be as the shown in the diagram, created using [Visual Paradigm](https://online.visual-paradigm.com): 
 
 ![ERD](static/images/readme/erd.png)
 
