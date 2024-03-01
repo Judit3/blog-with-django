@@ -10,9 +10,6 @@ You can check out the [live-site.](https://blog-with-django-ju-bff470dd15f2.hero
 
 ## Content
 
-- [Technologies Used](#technologies-used)
-  * [Languages Used](#languages-used)
-  * [Frameworks and Libraries Used](#frameworks-libraries-used)
 - [User Experience and Workflow](#user-experience-and-workflow)
   * [Target Audience](#target-audience)
   * [User stories](#user-stories)
@@ -35,43 +32,10 @@ You can check out the [live-site.](https://blog-with-django-ju-bff470dd15f2.hero
   * [Accessibility](#accessibility) 
 
  
-    
-    
+- [Technologies Used](#technologies-used)
+  * [Languages Used](#languages-used)
+  * [Frameworks and Libraries Used](#frameworks-libraries-used) 
 
-## Technologies Used
-
-- **GitHub** – storage and deployment
-- **Gitpod** - Editor
-- **Heroku** - Deployment
-- **Cloudinary** - Cloud storage for static images
-- **ElephantSQL** - PostgreSQL database
-- **Google Fonts** – import font
-- **Font Awesome**- import social media and contact icons
-- **Favicon Generator Website** – convert logo
-<!-- - **Balsamiq** – wireframes design -->
-- **Am I Responsive?** – check responsiveness of the website
-- **Google Maps** – embed map location
-- **Google Chrome** - build and test the website
-
-### Languages Used
-
-- Python
-- HTML/CSS
-- JavaScript
-
-### Frameworks and Libraries Used
-
-* Git / Github
-* Bootstrap
-<!-- * [django-allauth](https://docs.allauth.org/en/latest/)
-* [django-crispy-forms](https://django-crispy-forms.readthedocs.io/en/latest/)
-* [pillow Imaging Library](https://pypi.org/project/pillow/)
-* [django-taggit](https://github.com/jazzband/django-taggit)
-* [markdown2](https://pypi.org/project/django-markdown2/)
-* [django-image-uploader-widget](https://pypi.org/project/django-image-uploader-widget/)
-* django-storages and boto3, for r2 bucket storage
-* [django-cleanup](https://github.com/un1t/django-cleanup)
-* django extensions for exporting DB schema -->
 
 ## User Experience and Workflow
 
@@ -200,3 +164,54 @@ Overall performance of the website can be improved as some parts of the site are
 
 Alt-labels are used for images. Aria-labels for screen readers are implemented at certain places, also semantic elements are used so the page is easy to navigate.
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+## Technologies Used
+
+- **GitHub** – storage and deployment
+- **Gitpod** - Editor
+- **Heroku** - Deployment
+- **Cloudinary** - Cloud storage for static images
+- **ElephantSQL** - PostgreSQL database
+- **Google Fonts** – import font
+- **Font Awesome**- import social media and contact icons
+- **Favicon Generator Website** – convert logo
+<!-- - **Balsamiq** – wireframes design -->
+- **Am I Responsive?** – check responsiveness of the website
+- **Google Maps** – embed map location
+- **Google Chrome** - build and test the website
+
+### Languages Used
+
+- Python
+- HTML/CSS
+- JavaScript
+
+### Frameworks and Libraries Used
+
+* Git / Github
+* Bootstrap
+<!-- * [django-allauth](https://docs.allauth.org/en/latest/)
+* [django-crispy-forms](https://django-crispy-forms.readthedocs.io/en/latest/)
+* [pillow Imaging Library](https://pypi.org/project/pillow/)
+* [django-taggit](https://github.com/jazzband/django-taggit)
+* [markdown2](https://pypi.org/project/django-markdown2/)
+* [django-image-uploader-widget](https://pypi.org/project/django-image-uploader-widget/)
+* django-storages and boto3, for r2 bucket storage
+* [django-cleanup](https://github.com/un1t/django-cleanup)
+* django extensions for exporting DB schema -->
