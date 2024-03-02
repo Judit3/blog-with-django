@@ -398,7 +398,7 @@ Content was partially written and created by the developer with inspiration from
 
 ### Media
 
-Images were downloaded from royalty free website unsplash.com (<https://www.unsplash.com>).
+Images were downloaded from royalty free website [unsplash](<https://www.unsplash.com>).
 
   
 ### Acknowledgments
